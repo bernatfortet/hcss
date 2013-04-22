@@ -1,0 +1,65 @@
+!!! 5
+html(lange="en")
+
+	head
+		include meta
+
+		//Favicon
+		link( rel="shortcut icon", href="/favicon.ico")
+		link( rel="apple-touch-icon", href="/apple-touch-icon.png")
+
+		//Css
+		link( rel="stylesheet", type="text/css", media="screen", href="assets/css/style.css")
+
+		//Other Javascript
+		script( src="assets/scripts/script.js", type"text/javascript")
+
+
+		//RSS TODO
+
+	body.home
+		header
+			h1 HCSS
+			h2 Hyper Cascade Style Sheet
+			.desc HCSS is not a new CSS language but a “Best-Practices” guide on how to write faster, smarter and more robust CSS.  Following this style you will be able to code 70% faster.
+		nav
+			.inner
+				ol
+					li(data-state="Active") 1. It's Hyper
+					li 2. It's ordered
+					li 3. It's reusable
+
+		.content
+			section
+				p We all code html like in the following example
+				h3 HTML CLassic structure
+				code &#60a href='www.hcss.com' title='HCSS' rel='no_follow' class='css-class'&#62&#60/a&#62
+				
+				p If someone were to code HTML like the following example, I’m sure we’d say “you crazy man!”
+				h3 HTML with CSS LIKE Structure
+				code
+					| &#60a </br>
+					|     href=”www.hcss.com” </br>
+					|     title=”HCSS” </br>
+					|     rel=”no_follow” </br>
+					|     class=”css-class” </br>
+					| &#62 </br>
+					
+
+
+				p Nonetheless it’s normal for people to code CSS like this
+				h3 Classical CSS
+				code
+					| main-content{  </br>
+					| 	width: 100px; </br>
+					| 	height: 100px; </br>
+					| 	display: block; </br>
+					| 	color: black; </br>
+					| } </br>
+
+
+				
+				
+				
+				
+				
