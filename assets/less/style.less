@@ -6,7 +6,7 @@
 
 body{ .t-light;  background:url("../images/light-bkg.png") repeat;  }
 
-header{ padding:10px 0; background:url("../images/teal-bkg.png") repeat; .overflow;
+body > header{ padding:20px 0; background:url("../images/teal-bkg.png") repeat; .overflow;
 	h1{ .fs(98px, 1em, 0.2em); .gn-ultra; .tcenter; }
 	h2{ .fs(22px, 1em, 0.1em); .gn-light; .upcase; .tcenter;}
 	.desc{ .fs(15px, 1.5em); width:400px; margin:20px auto 20px; .t-light; }
@@ -15,14 +15,24 @@ header{ padding:10px 0; background:url("../images/teal-bkg.png") repeat; .overfl
 nav{ width:100%; height:40px; margin-bottom:40px; background:#171717;
 	.inner{ width:550px; margin:0 auto;}
 		li{ margin:10px 30px 5px 0; float:left; color:white; .fs(18px, 1em, 0.1em); .gn-light; .upcase; .tcenter;
-			&[data-state="Active"]{ .gn-bold; }
+			&[data-state="Active"]{ .gn-black; }
 		}
 	
 }
 
-.content{ width:900px; margin:0 auto;
-	p{ margin:30px 0;}
-	h3{ margin:15px 0; padding-left:15px; .fs(16px, 1em, 0.1em); .courier; .upcase; }
-	code{ margin-left:15px; padding:20px 30px; .block; background:#e6e2d8; .fs(15px); color:#4a4946; .courier; }
+.content{ width:780px; margin:0 auto 50px;
 
+	article{ margin:0 0 60px 0; }
+		p{ width:600px; margin:30px 0; .fs(16px, 1.6em); color:#595856; }
+		strong{ .t-bold;}
+		h3{ margin:25px 0; .fs(28px, 1em, 0.1em); color:#171717; .gn-ultra; .upcase;}
+		h4{ margin:15px 0; padding-left:15px; .fs(16px, 1em, 0.1em); .courier; .upcase; }
+		pre{ width:100%; .rel; }
+			code{ margin-left:15px; padding:20px 30px; .block; background:#e6e2d8; .fs(15px, 1.2em); color:#4a4946; .courier; }
+			.wrong{ width:54px; height:54px; .abs; right:-20px; top:-0px; background:url("../images/wrong.png") no-repeat;}
+			.correct{ width:89px; height:66px; .abs; right:-40px; top:-20px; background:url("../images/correct.png") no-repeat;}
+
+		.img{
+			img{ margin-left:100px;}
+		}
 }

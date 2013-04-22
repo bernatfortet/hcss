@@ -12,7 +12,11 @@ html(lange="en")
 		link( rel="stylesheet", type="text/css", media="screen", href="assets/css/style.css")
 
 		//Other Javascript
+		script( src="http://code.jquery.com/jquery-1.9.1.min.js", type"text/javascript")
+		script( src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js", type"text/javascript")
 		script( src="assets/scripts/script.js", type"text/javascript")
+
+
 
 
 		//RSS TODO
@@ -31,35 +35,65 @@ html(lange="en")
 
 		.content
 			section
-				p We all code html like in the following example
-				h3 HTML CLassic structure
-				code &#60a href='www.hcss.com' title='HCSS' rel='no_follow' class='css-class'&#62&#60/a&#62
-				
-				p If someone were to code HTML like the following example, I’m sure we’d say “you crazy man!”
-				h3 HTML with CSS LIKE Structure
-				code
-					| &#60a </br>
-					|     href=”www.hcss.com” </br>
-					|     title=”HCSS” </br>
-					|     rel=”no_follow” </br>
-					|     class=”css-class” </br>
-					| &#62 </br>
+				header
+					h3 It's Hyper
+				article
+					p We all code html like in the following example:
+					h4 HTML CLassic structure
+					pre
+						code.prettyprint
+							&#60a href='www.hcss.com' title='HCSS' rel='no_follow' class='css-class'&#62&#60/a&#62
+						.correct
+					
+					p If someone were to code HTML like the following example, I’m sure we would say “you crazy man!”
+					h4 HTML with CSS LIKE Structure
+					pre
+						code.prettyprint.
+							&#60a
+									href=”www.hcss.com”
+									title=”HCSS”
+									rel=”no_follow”
+									class=”css-class”
+							&#62
+						.wrong
+						
+
+
+					p Nonetheless it’s normal for people to code CSS like this
+					h4 Classical CSS
+					pre
+						code.prettyprint.
+							main-content{
+									width: 100px;
+									height: 100px;
+									margin: 0px 20px;
+									color: black;
+							}
+						.wrong				
+					
+					p This approach give us abnormally long files were it’s very hard to find the class we were looking for without using the searcher or a ton of comments.
+					p HCSS approach thinks about how HTML is writen and applys it to CSS. 
+					h4 HCSS
+					pre
+						code.prettyprint.
+							main-content{ width:100px; height:100px; margin:0px 20px; color:white; }
+						.correct
 					
 
+					p Somethin very interesting happens when writting this way. Suddenly, we can use the same indentation style as in HTML, providing hierarchycal identation inside CSS.
 
-				p Nonetheless it’s normal for people to code CSS like this
-				h3 Classical CSS
-				code
-					| main-content{  </br>
-					| 	width: 100px; </br>
-					| 	height: 100px; </br>
-					| 	display: block; </br>
-					| 	color: black; </br>
-					| } </br>
+					.img
+						img(src="../assets/images/html-to-css.png", alt="Html Structure is replicated in CSS")
+			
+			section
+				header
+					h3 It's ordered
+				article
+					p
+						| HCSS is thought as a coordiante system. First you look on the Y axis. By being indented as the HTMl is much easier to find anything. Once you are on the class your were looking for you need to look on the X axis. In order to make this step faster and easier, a strict order must be used. HCSS is basically ordere in three categories of properties: </br>
+						| <strong>dimensions/structural/positioning</strong> - <strong>background and font style</strong> - <strong>the rest</strong>
 
+					code.
+						Widht - Height / Display / Position / left, right, top, bottom / float / margins / paddings / background / color / text types / CSS3 features (text-shadow/ border radius / box-shadow) / opacity / overflow / z-index
 
-				
-				
-				
-				
 				
