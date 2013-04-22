@@ -1,4 +1,1 @@
-$ dig hcss.bernatfortet.com +nostats +nocomments +nocmd
-# ;hcss.bernatfortet.com.                 IN      A
-# hcss.bernatfortet.com.          3592    IN      CNAME   bernatfortet.github.io.
-# bernatfortet.github.io.         43192   IN      A       204.232.175.78
+hcss.bernatfortet.com
